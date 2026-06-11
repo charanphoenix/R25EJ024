@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charan P S | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    margin:40px 0;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:#0f172a;
+    border-bottom:3px solid #2563eb;
+    display:inline-block;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.links a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:10px 20px;
+    border-radius:5px;
+    margin:5px;
+    display:inline-block;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Charan P S</h1>
+    <p>Computer Science Student | AI Enthusiast | Full Stack Developer</p>
+
+    <div class="links">
+        <a href="https://github.com/charanphoenix" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/charan-ps-026317394/" target="_blank">LinkedIn</a>
+    </div>
+</header>
+
+<div class="container">
+
+<section>
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            I am a Computer Science student at Reva University
+            with a strong interest in Artificial Intelligence,
+            Data Science, Full Stack Development, and Cloud Technologies.
+            I enjoy building real-world applications using modern technologies
+            such as React, Next.js, Python, Flask, TypeScript, and Supabase.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+        <h3>Reva University</h3>
+        <p>Bachelor's Degree in Computer Science</p>
+        <p>Expected Graduation: 2029</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">TypeScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Next.js</span>
+        <span class="skill">Flask</span>
+        <span class="skill">Tailwind CSS</span>
+        <span class="skill">Supabase</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">AI</span>
+        <span class="skill">Data Science</span>
+        <span class="skill">Machine Learning</span>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+        <h3>SchemeBot</h3>
+        <p>
+            AI-powered government scheme recommendation system built using
+            Next.js, TypeScript, Supabase, and OpenAI.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>AI Healthcare Assistant</h3>
+        <p>
+            AI-based healthcare assistant capable of analyzing symptoms
+            and providing intelligent recommendations.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Image Recognition System</h3>
+        <p>
+            Flask application that compares and recognizes uploaded images
+            using machine learning techniques.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="card">
+        <ul>
+            <li>IBM SkillsBuild - Python for Data Science</li>
+            <li>IBM SkillsBuild - Data Analysis with Python</li>
+            <li>IBM SkillsBuild - Data Visualization with Python</li>
+            <li>Google Cloud Skills Boost Labs</li>
+            <li>Microsoft Learn Certifications</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+        <p><strong>Phone:</strong> +91 9380162466</p>
+        <p><strong>Personal Email:</strong> charanps977@gmail.com</p>
+        <p><strong>College Email:</strong> ugcet2502746@reva.edu.in</p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Charan P S | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
