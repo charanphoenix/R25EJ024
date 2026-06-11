@@ -1,0 +1,34 @@
+System Role / Objective: Act as an expert C programmer. Your task is to write a complete, interactive, text-based 2D graphics engine in C that renders shapes onto a console-based canvas.
+
+Core Architecture & Data Structures:
+
+The Canvas: Create a global 2D character array named canvas with dimensions 25 rows by 60 columns.
+Initialization: Provide a function to initialize the entire canvas with empty space characters (' ').
+Display: Create a function to render the canvas to the terminal.
+Dynamically clear the console screen before rendering (handling both Windows and Unix environments).
+Draw a border around the canvas (e.g., using - for top/bottom and | for left/right).
+Drawing Functions (Requirements & Constraints): All drawing functions must include strict boundary/safety checks to ensure that drawing outside the 25x60 canvas does not cause memory corruption or segmentation faults.
+
+Draw Line: Implement a line-drawing algorithm (like DDA) that takes (x1, y1, x2, y2) and a character. It must handle lines in any direction.
+Draw Rectangle: Take (row, col, height, width) and a character. Draw only the hollow frame/outline of the rectangle.
+Draw Circle: Take (center_x, center_y, radius) and a character. Draw a hollow circle. Crucial requirement: You must account for the terminal's rectangular character aspect ratio (characters are typically taller than they are wide) by applying a multiplier (e.g., 2.0) to the row distances so the circle appears perfectly round rather than oval.
+Draw Triangle: Take (top_row, top_col, height) and a character. Draw an isosceles triangle pointing upwards.
+Clear Area / Delete Object: Take (row, col, height, width) and overwrite that specific rectangular region with space characters (' ').
+Interactive Menu & User Interface: Implement a menu() function that runs in an infinite loop until the user chooses to exit. It should display the following options, accept user input for coordinates/dimensions, execute the corresponding function, and then redraw the updated canvas:
+
+Draw Line: Prompts for row1, col1, row2, col2. (Default character *)
+Draw Rectangle: Prompts for row, col, height, width. (Default character #)
+Draw Circle: Prompts for center row, col, and radius. (Default character o)
+Draw Triangle: Prompts for top-vertex row, col, and height. (Default character +)
+Delete Object (Clear Area): Prompts for row, col, height, width to wipe clean.
+Modify Rectangle: Prompts for target rectangle coordinates (row, col, height, width) and a new symbol character. It should wipe the old area and draw the new rectangle.
+Clear Entire Screen: Reinitializes the entire canvas.
+Exit: Breaks the loop and ends the program.
+Technical Standards:
+
+Include <stdio.h>, <stdlib.h>, and <math.h>.
+Use clean, readable code with comments explaining the logic, especially for mathematical calculations like the circle boundary and line increments.
+Ensure robust scanf handling so invalid inputs don't trap the program in an infinite loop.
+How to use this prompt:
+To generate code: Paste this into an AI (like me, ChatGPT, or Claude) to get a perfectly recreated version of your C code.
+As an assignment: Hand this to a student or junior developer. It clearly outlines the edge cases (like terminal aspect ratio and boundary checks) without giving away the exact code implementation.

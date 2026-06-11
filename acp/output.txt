@@ -1,0 +1,116 @@
+Here is an example of what the console output looks like when you compile and run the C program.
+
+Because the program is interactive and runs in a loop, here is a step-by-step simulation of the output from starting the program, drawing a rectangle, and seeing the result.
+
+1. Initial Screen
+When you first run the program, it displays the menu and an empty 25x60 canvas enclosed in borders:
+
+text
+
+
+--- 2D GRAPHICS MENU ---
+1. Draw Line
+2. Draw Rectangle
+3. Draw Circle
+4. Draw Triangle
+5. Delete Object (Clear Area)
+6. Modify Rectangle
+7. Clear Entire Screen
+8. Exit
+Enter choice:
+(Assume the user types 2 and hits Enter)
+
+2. Prompting for Input
+The program will ask for the dimensions of the rectangle:
+
+text
+
+
+Enter row col height width:
+(Assume the user types 5 10 5 20 and hits Enter)
+
+3. Canvas Rendering
+The program clears the screen using system("clear || cls") and redraws the canvas with the new rectangle made of # characters. It then immediately reprints the menu below the canvas so you can make your next choice.
+
+text
+
+
+--------------------------------------------------------------
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|          ####################                              |
+|          #                  #                              |
+|          #                  #                              |
+|          #                  #                              |
+|          ####################                              |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+--------------------------------------------------------------
+--- 2D GRAPHICS MENU ---
+1. Draw Line
+2. Draw Rectangle
+3. Draw Circle
+4. Draw Triangle
+5. Delete Object (Clear Area)
+6. Modify Rectangle
+7. Clear Entire Screen
+8. Exit
+Enter choice:
+4. Drawing a Circle
+If the user now selects 3 to draw a circle, and enters 15 40 6 (center row 15, col 40, radius 6), the screen clears and updates to show both the previous rectangle and the new hollow circle made of o characters:
+
+text
+
+
+--------------------------------------------------------------
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|          ####################                              |
+|          #                  #                              |
+|          #                  #                              |
+|          #                  #                              |
+|          ####################                              |
+|                                                            |
+|                                                            |
+|                                        ooooo               |
+|                                     ooo     ooo            |
+|                                    oo         oo           |
+|                                   oo           oo          |
+|                                    oo         oo           |
+|                                     ooo     ooo            |
+|                                        ooooo               |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+|                                                            |
+--------------------------------------------------------------
+--- 2D GRAPHICS MENU ---
+1. Draw Line
+2. Draw Rectangle
+3. Draw Circle
+4. Draw Triangle
+...
+Notice how the circle algorithm automatically spaces the characters vertically to account for the fact that terminal text characters are taller than they are wide.
+
+This loop continues, clearing and redrawing the 25x60 text grid, until the user presses 8 to exit the program
