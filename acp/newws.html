@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Global News Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef2f7;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.1rem;
+opacity:.9;
+}
+
+/* Navigation */
+
+nav{
+position:sticky;
+top:0;
+z-index:100;
+background:white;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:18px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+color:#1e293b;
+font-weight:600;
+transition:.3s;
+padding:8px 15px;
+border-radius:30px;
+}
+
+nav a:hover{
+background:#2563eb;
+color:white;
+}
+
+/* Container */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+color:white;
+padding:50px;
+border-radius:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+box-shadow:0 15px 40px rgba(37,99,235,.25);
+margin-bottom:40px;
+}
+
+.hero-text{
+flex:1;
+min-width:280px;
+}
+
+.hero h2{
+font-size:2.2rem;
+margin-bottom:15px;
+}
+
+.hero p{
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.hero a{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:#2563eb;
+font-weight:600;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.hero a:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+/* Cards */
+
+.news-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.35s;
+border-top:5px solid #2563eb;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.card p{
+line-height:1.6;
+margin-bottom:20px;
+color:#555;
+}
+
+.btn{
+display:inline-block;
+padding:10px 22px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+font-weight:500;
+}
+
+.btn:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.2rem;
+}
+
+.hero{
+padding:35px;
+text-align:center;
+}
+
+.hero h2{
+font-size:1.8rem;
+}
+
+nav{
+flex-wrap:wrap;
+gap:12px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Global News Hub</h1>
+<p>Your Daily Source of News</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Technology</a>
+<a href="#">Sports</a>
+<a href="#">Business</a>
+<a href="#">World</a>
+</nav>
+
+<div class="container">
+
+<div class="hero">
+
+<div class="hero-text">
+<h2>Breaking News</h2>
+
+<p>
+Artificial Intelligence continues to transform industries worldwide,
+creating new opportunities in education, healthcare, robotics and software development.
+</p>
+
+<a href="#">Explore News</a>
+
+</div>
+
+</div>
+
+<div class="news-grid">
+
+<div class="card">
+<h3>Technology News</h3>
+<p>
+Researchers introduce new AI models capable of understanding images and text simultaneously.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<h3>Sports News</h3>
+<p>
+International sporting events continue to attract millions of viewers across the globe.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<h3>Business News</h3>
+<p>
+Technology companies increase investment in artificial intelligence and cloud computing.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<h3>Education News</h3>
+<p>
+Universities are expanding AI and data science programs to meet industry demand.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<h3>Science News</h3>
+<p>
+Scientists make advancements in renewable energy and sustainable technologies.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+<div class="card">
+<h3>World News</h3>
+<p>
+Global collaboration continues to drive innovation in technology and research.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Global News Hub | Developed by Harinandan R P
+</footer>
+
+</body>
+</html>
